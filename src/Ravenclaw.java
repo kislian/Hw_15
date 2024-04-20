@@ -37,8 +37,8 @@ public class Ravenclaw extends Hogwarts {
         return powerWit;
     }
 
-    void printContent(Ravenclaw ravenclaw) {
-        System.out.println(ravenclaw);
+    void printContent() {
+        System.out.println(toString());
     }
 
     public static int calcull(Ravenclaw magic) {

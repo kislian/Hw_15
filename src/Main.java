@@ -12,10 +12,15 @@ public class Main {
         Slytherin dracoMalfoy = new Slytherin(65, 55, "Драко Малфой", 55, 45, 55);
         Slytherin grahamMontague = new Slytherin(45, 40, "Грэхэм Монтегю", 45, 40, 30);
         Slytherin gregoryGoyle = new Slytherin(45, 60, "Грегори Гойл", 35, 40, 50);
-        harryPotter.printContent(harryPotter);
-        zachariahSmith.printContent(zachariahSmith);
-        zhouChangs.printContent(zhouChangs);
-        dracoMalfoy.printContent(dracoMalfoy);
+        harryPotter.printContent();
+        //вариант 2  начало если считать to_String за метод
+        System.out.println("Варинат 2  begin");
+        System.out.println(harryPotter);
+        System.out.println("Варинат 2  end");
+        //окончание
+        zachariahSmith.printContent();
+        zhouChangs.printContent();
+        dracoMalfoy.printContent();
         Gryffindor.compare(harryPotter, hermioneGranger);
         Hufflepuff.compare(zachariahSmith, cedricDiggory);
         Ravenclaw.compare(zhouChangs, padmaPatil);

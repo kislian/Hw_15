@@ -1,16 +1,16 @@
 //Гриффиндор
 public class Gryffindor extends Hogwarts{
     //сила благородства
-    private int powerGegnerosity;
+    private int powerGenerosity;
     //сила чести
     private  int powerHonour;
     //сила храбрости
     private int  powerCourage;
 
     //конструктор
-    public Gryffindor(int powerMagic, int transgressDistance, String pupil, int powerGegnerosity, int powerHonour, int powerCourage) {
+    public Gryffindor(int powerMagic, int transgressDistance, String pupil, int powerGenerosity, int powerHonour, int powerCourage) {
         super(powerMagic, transgressDistance, pupil);
-        this.powerGegnerosity = powerGegnerosity;
+        this.powerGenerosity = powerGenerosity;
         this.powerHonour = powerHonour;
         this.powerCourage = powerCourage;
     }
@@ -19,7 +19,7 @@ public class Gryffindor extends Hogwarts{
         public String toString() {
 
         return "Gryffindor{" + super.toString()+
-                "powerGegnerosity=" + powerGegnerosity +
+                "powerGegnerosity=" + powerGenerosity +
                 ", powerHonour=" + powerHonour +
                 ", powerCourage=" + powerCourage +
                 '}';
@@ -27,8 +27,8 @@ public class Gryffindor extends Hogwarts{
     public static int calcull(Gryffindor magic){
         return magic.getPowerGegnerosity()+magic.powerHonour+magic.powerCourage;
     }
-    void  printContent(Gryffindor gryffindor){
-        System.out.println(gryffindor);
+    void  printContent(){
+        System.out.println(toString());
     };
     static void compare(Gryffindor student1,Gryffindor student2){
      int sum1=calcull(student1)  ;
@@ -36,14 +36,14 @@ public class Gryffindor extends Hogwarts{
         if (sum1>sum2){
             System.out.println(student1.getPupil()+" лучший Гриффиндоровец чем "+ student2.getPupil() );
         } else if (sum2 > sum1) {
-            System.out.println(student2.getPupil()+" лучший Гриффиндоровец чем "+ student2.getPupil() );
+            System.out.println(student2.getPupil()+" лучший Гриффиндоровец чем "+ student1.getPupil() );
         } else {
             System.out.println(student1 + " оджинаковые по силе с"+ student2 +" в Гриффиндорде  " );
         }
     }
 
     public int getPowerGegnerosity() {
-        return powerGegnerosity;
+        return powerGenerosity;
     }
 
     public int getPowerHonour() {

@@ -54,8 +54,8 @@ public class Hufflepuff extends Hogwarts {
         }
     }
 
-    void printContent(Hufflepuff hufflepuff) {
-        System.out.println(hufflepuff);
+    void printContent() {
+        System.out.println(toString());
     }
 
     @Override

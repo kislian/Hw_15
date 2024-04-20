@@ -25,23 +25,24 @@ public class Slytherin extends Hogwarts{
     public static int calcull(Slytherin magic){
         return magic.powerCunning +magic.powerResolution+magic.powerAmbition;
     }
-    static void compare(Slytherin student1,Slytherin student2){
-        int sum1=calcull(student1)  ;
-        int sum2=calcull(student2);
-        if (sum1>sum2){
-            System.out.println(student1+ " лучший Слизеринец чем "+ student2 );
+
+    static void compare(Slytherin student1, Slytherin student2) {
+        int sum1 = calcull(student1);
+        int sum2 = calcull(student2);
+        if (sum1 > sum2) {
+            System.out.println(student1 + " лучший Слизеринец чем " + student2);
         } else if (sum2 > sum1) {
-            System.out.println(student2+ " лучший Слизеринец чем "+ student1 );
+            System.out.println(student2 + " лучший Слизеринец чем " + student1);
         } else {
-            System.out.println( student1+ " одинаковые по силе  в Слизерине с "+ student2);
+            System.out.println(student1 + " одинаковые по силе  в Слизерине с " + student2);
         }
     }
 
     public int getPowerAmbition() {
         return powerAmbition;
     }
-    void printContent(Slytherin slytherin){
-        System.out.println(slytherin);
+    void printContent(){
+        System.out.println(toString());
     }
     @Override
     public String toString() {
